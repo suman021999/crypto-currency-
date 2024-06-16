@@ -3,6 +3,7 @@ import { Url } from "./Url";
 import axios from "axios";
 import Loader from "./Loader";
 import CoinCard from "./CoinCard";
+// import Header from '../pages/Header'
 const Coins = () => {
   const [loading, setLoading] = useState(true);
   const [coins, setCoins] = useState([]);
@@ -33,6 +34,7 @@ const Coins = () => {
         <Loader />
       ) : (
         <>
+        {/* <Header search={search}/> */}
        
         <div className="mt-20 mb-10 mx-8">
           <button className="h-8 bg-orange-600 border-none ml-8 w-20 rounded-xl mt-10" onClick={()=>setCurrency('inr')}>inr</button>

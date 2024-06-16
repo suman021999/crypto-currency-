@@ -3,7 +3,7 @@ import Header from "../pages/Header";
 import axios from "axios";
 import Loader from "./Loader";
 import { Url } from "./Url";
-
+import OurModel from '../components/OurModel'
 const Exchanges = () => {
   const [loading, setLoading] = useState(true);
   const [exchanges, setExchanges] = useState([]);
@@ -23,6 +23,7 @@ const Exchanges = () => {
         <Loader />
       ) : (
         <>
+        <OurModel/>
           <div className="mt-32 mb-10 mx-8">
             {exchanges.map((item, index) => {
               return (
