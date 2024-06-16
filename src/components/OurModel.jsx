@@ -10,8 +10,8 @@ function Model(props){
 const OurModel = () => {
   return (
     <>
-      <Canvas dpr={[1,2]} shadows camera={{fov: 45}} style={{position:"absolute", top:"7%", marginTop:"20px"}}>
-      <color attach="background" args={['#1d0e49']} /> 
+      <Canvas dpr={[1,2]} shadows camera={{fov: 45}} style={{position:"absolute", top:"7%", marginTop:"20px", zIndex:"-9999"}} >
+      <color attach="background" args={['#1d0e49']}/> 
       <ambientLight intensity={-1}  />
      
       <PresentationControls speed={1.5} global zoom={.5} polar={[-0.1, Math.PI / 4]} >

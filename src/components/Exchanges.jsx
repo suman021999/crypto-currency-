@@ -24,7 +24,7 @@ const Exchanges = () => {
       ) : (
         <>
         <OurModel/>
-          <div className="mt-32 mb-10 mx-8">
+          <div className="mt-[50rem] mb-20 mx-8">
             {exchanges.map((item, index) => {
               return (
                 <div

@@ -10,7 +10,7 @@ const CoinCard = ({coindata, currencySymbol, index, id}) => {
     
     <div
         key={index}
-        className="flex md:flex max-sm:flex-col max-sm:gap-4 md:justify-between items-center justify-evenly mt-20 mb-20 mx-8 text-[20px] font-bold"
+        className="flex md:flex max-sm:flex-col  max-sm:gap-4 md:justify-between items-center justify-evenly mt-20 mb-20 mx-8 text-[20px] font-bold"
       >
         <div className="w-28 md:h-12 md:ml-10 md:mr-5">
           <img className="h-[80px]" src={coindata.image} alt="" />
